@@ -4007,3 +4007,9 @@ Started GET "/posts/new" for 184.88.69.70 at 2019-12-10 04:06:23 +0000
 Cannot render console from 184.88.69.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by PostsController#new as HTML
   Rendering posts/new.html.erb within layouts/application
+  [1m[36mAuthor Load (0.2ms)[0m  [1m[34mSELECT "authors".* FROM "authors"[0m
+  Rendered posts/_form.html.erb (9.9ms)
+  Rendered posts/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 33ms (Views: 23.2ms | ActiveRecord: 1.6ms)
+
+
