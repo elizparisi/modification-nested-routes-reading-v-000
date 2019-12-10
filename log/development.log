@@ -3918,3 +3918,8 @@ Processing by PostsController#show as HTML
 Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 1.7ms)
 
 
+Started GET "/posts/18/edit" for 184.88.69.70 at 2019-12-10 03:48:49 +0000
+Cannot render console from 184.88.69.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
