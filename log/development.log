@@ -3855,3 +3855,14 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/posts" for 184.88.69.70 at 2019-12-10 03:41:13 +0000
+Cannot render console from 184.88.69.70! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ju5h9YC+iQhvnvibgucTiI34pJXKTdk73HXjQkNhXU8kdgkaduat6/yk6Ixc5qMTuL9ciKGDwzxuGtb1+NfduQ==", "post"=>{"title"=>"V Important", "description"=>"Important Info\r\n"}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "V Important"], ["description", "Important Info\r\n"], ["created_at", "2019-12-10 03:41:13.487176"], ["updated_at", "2019-12-10 03:41:13.487176"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://165.227.81.218:54711/posts/17
+Completed 302 Found in 9ms (ActiveRecord: 3.7ms)
+
+
